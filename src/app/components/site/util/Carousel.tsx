@@ -15,11 +15,11 @@ export const Carousel = ({ children, ...options }: Props) => {
 
 
     return (
-
-        <div className="overflow-hidden flex" ref={emblaRef}>
-            <div className="flex gap-x-40" >{children}</div>
+        <div className="lg:w-[1400px] w-[320px]" >
+            <div className="overflow-x-hidden " ref={emblaRef}>
+                <div className="flex items-center gap-x-40 " >{children}</div>
+            </div>
         </div>
-
 
 
     );
