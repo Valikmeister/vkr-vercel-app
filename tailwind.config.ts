@@ -16,9 +16,9 @@ const config: Config = {
       },
     },
     screens: {
-      'sm': '576px',
-      'md': '960px',
-      'lg': '1440px',
+      'sm': '100px',
+      'md': '500px',
+      'lg': '1000px',
     },
   },
   darkMode: "class",

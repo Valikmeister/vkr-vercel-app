@@ -1,42 +1,74 @@
 
-'use client'
-
 
 import { Tab, Tabs } from "@nextui-org/react";
-import { useRouter } from 'next/navigation'
-import { usePathname } from "next/navigation";
-import { ScrollY } from "../util/scrollTracker";
-import { Key } from "react";
-import Link from "next/link";
+import { Link } from "react-scroll";
+import { Button, ButtonGroup } from "@nextui-org/react";
+import { useRef } from "react";
+
 
 export default function SiteTabs() {
-
-
-    const router = useRouter();
-    const currentPath = usePathname();
 
 
 
 
     return (
-        //<div className="flex w-full flex-col">
-        <Tabs variant="underlined" >
-
-            <Tab key="home" title="Home" href="#" />
 
 
-            <Tab key="projects" title="Projects" href="#projects" />
+        <ButtonGroup variant="ghost">
+            <Button as={Link} href="#" to="home-scroll" spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500} >Home</Button>
+            <Button as={Link} href="#projects" to="project-scroll" spy={true}
+                smooth={true}
+                offset={-200}
+                duration={500} >Projects</Button>
+            <Button as={Link} href="#aboutme" to="about-me-scroll" spy={true}
+                smooth={true}
+                offset={-125}
+                duration={500} >About Me</Button>
+            <Button as={Link} href="#contact" to="contact-scroll" spy={true}
+                smooth={true}
+                offset={-90}
+                duration={500}>Contact</Button>
+        </ButtonGroup >
 
-            <Tab key="aboutme" title="About Me" href="#aboutme" />
+        // <Tabs variant="underlined">
+        //     <Tab id="/#" title="Home" ></Tab>
+        //     <Tab id="/#projects" title="Projects" as={Link} href="#"></Tab>
+        //     <Tab id="/#aboutme" title="About Me" href="#aboutme"></Tab>
+        //     <Tab id="/#contact" title="Contact" href="#contact"></Tab>
+        // </Tabs>
 
 
-            <Tab key="contact" title="Contact" href="#contact" />
 
-            <Tab />
 
-        </Tabs>
-        //  </div>
     );
+
+
+
+
+    // <Tabs variant="bordered" selectedKey={pathname}  >
+
+    //     <Tab key="/#" title="Home" href="/#" />
+
+
+    //     <Tab key="/#projects" title="Projects" href="/#projects" />
+
+    //     <Tab title="About Me" href="#aboutme" />
+
+
+    //     <Tab title="Contact" href="#contact" />
+
+    //     <Tab />
+
+    // </Tabs>
+
+
+
+
+
+
 }
 
 

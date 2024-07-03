@@ -1,0 +1,42 @@
+{
+    "language": {
+        "es": {
+            "navbar-menu": [
+                "Inicio",
+                "Proyectos",
+                "Sobre Mi",
+                "Contacto"
+            ],
+            "home-card-title": "Bienvenido a mi",
+            "home-card-title-1": "Rincon de Desarrollo de Software",
+            "home-card-body": "Ejemplo",
+            "projects-title": "Proyectos",
+            "about-me-card-body": "",
+            "contact-title": "Contactame!",
+            "contact-card-links": [
+                "Mira mi",
+                "Encuentrame en",
+                "Conctactame por"
+            ]
+        },
+        "en": {
+            "navbar-menu": [
+                "Home",
+                "Projects",
+                "About Me",
+                "Contact"
+            ],
+            "home-card-title": "Welcome to",
+            "home-card-title-1": "My Software Development World",
+            "home-card-body": "Example",
+            "projects-title": "PROJECTS",
+            "about-me-card-body": "",
+            "contact-title": "Contact me!",
+            "contact-card-links": [
+                "Look at my",
+                "Find me in",
+                "Contact me through"
+            ]
+        }
+    }
+}

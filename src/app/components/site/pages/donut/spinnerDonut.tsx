@@ -8,8 +8,8 @@ import donutFrames from './donutFrames';
 
 
 const Donut = ({
-    scaleX = 1,
-    scaleY = 1,
+    scaleX = 0.5,
+    scaleY = 0.5,
     fontSize = 9,
     frameInterval = 100,
 
