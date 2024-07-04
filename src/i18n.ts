@@ -1,6 +1,6 @@
 import { getRequestConfig } from 'next-intl/server';
 import { getUserLocale } from './services/localCookies';
-import { getUserLocaleSync } from './services/clientCookies';
+
 
 
 export default getRequestConfig(async () => {
