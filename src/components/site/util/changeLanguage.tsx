@@ -12,9 +12,9 @@ export function ChangeLanguage(props) {
     const [isSpanish, setLang] = useState(false)
 
     useEffect(() => {
-        const cookies = useCookies()
+        const cookies = getUserLocale()
 
-        if (cookies.get('LOCALE') === undefined) {
+        if (cookies === undefined) {
 
 
             setUserLocale('en')
