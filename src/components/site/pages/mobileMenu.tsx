@@ -7,7 +7,7 @@ export function MobileMenuToggle(props: any) {
 
     return (
         <div className="flex  ">
-            <Dropdown backdrop="blur">
+            <Dropdown>
                 <DropdownTrigger {...props}>
                     <Button
                         variant="bordered"

@@ -1,14 +1,18 @@
 "use client"
 
 import Image from "next/image";
-import { HomeCards } from "./components/site/home/homeCards";
-import { ProjectCarousel } from "./components/site/projects/projectsCarousel";
-import { AboutMeCards } from "./components/site/aboutme/aboutmeCard";
-import ContactCard from "./components/site/contact/contactCards";
+import { HomeCards } from "../components/site/home/homeCards";
+import { ProjectCarousel } from "../components/site/projects/projectsCarousel";
+import { AboutMeCards } from "../components/site/aboutme/aboutmeCard";
+import ContactCard from "../components/site/contact/contactCards";
 import { Element } from "react-scroll";
+
+
 export default function MainPage() {
   return (
     <main className="flex   flex-col items-center justify-center  dark:bg-black py-20 ">
+
+
 
       <div>
         <Element name="home-scroll" />

@@ -1,0 +1,23 @@
+{
+    "Translation": {
+        "navbar-menu": [
+            "Inicio",
+            "Proyectos",
+            "Sobre Mi",
+            "Contacto"
+        ],
+        "home-card-title": "Bienvenido a mi",
+        "home-card-title-1": "Rincon de Desarrollo de Software",
+        "home-card-body": "Ejemplo",
+        "home-card-footer": "Por un mejor futuro Web 3.0",
+        "home-card-footer-1": "Mejorando dia a dia",
+        "projects-title": "PROYECTOS",
+        "about-me-card-body": "",
+        "contact-title": "Contactame!",
+        "contact-card-links": [
+            "Mira mi",
+            "Encuentrame en",
+            "Conctactame por"
+        ]
+    }
+}

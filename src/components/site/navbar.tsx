@@ -7,15 +7,15 @@ import {
 
     NavbarMenu,
     NavbarMenuItem,
-
+    Link,
     Button
 } from "@nextui-org/react";
-import { Link } from "react-scroll";
+import { Link as LinkScroll } from "react-scroll";
 import { ThemeSwitcher } from "./util/themeswitch";
 import { SpanishFlagIcon } from "../icons/SpanishFlagIcon";
 import { EnglandFlagIcon } from "../icons/EnglandFlagIcon";
 import SiteTabs from "./pages/siteTabs";
-
+import { ChangeLanguage } from "./util/changeLanguage";
 import { MobileMenuToggle } from "./pages/mobileMenu";
 
 export default function NavBar() {
@@ -30,12 +30,12 @@ export default function NavBar() {
 
             <NavbarContent className="justify-end">
                 <NavbarBrand className=" select-none ">
-                    <Link to="home-scroll" className="dark:text-white text-black" spy={true}
+                    <LinkScroll to="home-scroll" className="dark:text-white text-black" spy={true}
                         smooth={true}
                         offset={-125}
                         duration={500}>
                         <p className="font-sans text-2xl ">V KR</p>
-                    </Link>
+                    </LinkScroll>
 
                 </NavbarBrand>
                 <NavbarContent justify="start">
@@ -63,10 +63,7 @@ export default function NavBar() {
                     <ThemeSwitcher></ThemeSwitcher>
                 </NavbarItem>
                 <NavbarItem>
-                    <Button isIconOnly={true} color="default" variant="light" disableRipple={true}>
-                        <EnglandFlagIcon className=""></EnglandFlagIcon>
-
-                    </Button>
+                    <ChangeLanguage>sdfa</ChangeLanguage>
                 </NavbarItem>
             </NavbarContent>
 

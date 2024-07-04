@@ -2,15 +2,16 @@ import { Carousel } from "../util/Carousel";
 import { Card, CardHeader, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
 import ProjectSkeletonCard from "./skeletonCard";
 import { Code } from "@nextui-org/react";
+import { useTranslations } from "next-intl";
 
 export function ProjectCarousel() {
-
+    const t = useTranslations("Translation")
 
     return (
 
         <div id="projects" className="my-50 select-none  scroll-m-52 ">
             <div className="flex justify-center">
-                <Code className="mb-10 font-mono text-2xl" size="lg">PROJECTS</Code>
+                <Code className="mb-10 font-mono text-2xl" size="lg">{t("projects-title")}</Code>
             </div>
             <div className="items-center">
                 <Carousel   >

@@ -1,0 +1,23 @@
+{
+    "Translation": {
+        "navbar-menu": [
+            "Home",
+            "Projects",
+            "About Me",
+            "Contact"
+        ],
+        "home-card-title": "Welcome to",
+        "home-card-title-1": "My Software Development World",
+        "home-card-body": "Example",
+        "home-card-footer": "For a better Web3 Future",
+        "home-card-footer-1": "Reaching new goals day by day",
+        "projects-title": "PROJECTS",
+        "about-me-card-body": "",
+        "contact-title": "Contact me!",
+        "contact-card-links": [
+            "Look at my",
+            "Find me in",
+            "Contact me through"
+        ]
+    }
+}

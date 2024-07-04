@@ -1,13 +1,16 @@
 import { Card, CardHeader, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
-import { SpanishLang, SpanishLocale } from "../locale/languageTypes";
-import { Element } from "react-scroll";
+import { useTranslations } from "next-intl";
+
+
+
+
 
 export function HomeCards() {
 
 
     const leftArrow = "<"
     const rightArrow = "/>"
-    const spanish = SpanishLang()
+    const t = useTranslations("Translation");
 
     return (
 
@@ -15,11 +18,11 @@ export function HomeCards() {
 
             <Card className="lg:h-[700px]  md:h-[500px] h-[600px]   lg:w-[1100px] md:w-[500px] w-[380px] bg-grey shadow-2xl" shadow="lg" isPressable={false} disableRipple>
                 <CardHeader className="absolute z-10 top-1 flex-col">
-                    <p className="text-tiny text-white/60 uppercase font-bold ">{spanish.home_title}</p>
-                    <h4 className="text-white font-medium text-large ">{leftArrow}My Software Development World{rightArrow}</h4>
+                    <p className="text-tiny text-white/60 uppercase font-bold ">{t("home-card-title")}</p>
+                    <h4 className="text-white font-medium text-large ">{leftArrow}{t("home-card-title-1")}{rightArrow}</h4>
 
 
-                    <p className="text-white mt-24">sdfsadfd</p>
+                    <p className="text-white mt-24">{t("home-card-body")}</p>
                 </CardHeader>
                 <Image removeWrapper
                     alt="Card background"
@@ -30,8 +33,8 @@ export function HomeCards() {
 
                 <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-center animate-pulse">
                     <div>
-                        <p className="text-white text-tiny">For a better Web3 future</p>
-                        <p className="text-white text-tiny">Improving day by day</p>
+                        <p className="text-white text-tiny">{t("home-card-footer")}</p>
+                        <p className="text-white text-tiny">{t("home-card-footer-1")}</p>
                     </div>
 
                 </CardFooter>
