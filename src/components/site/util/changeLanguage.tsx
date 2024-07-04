@@ -41,7 +41,7 @@ export function ChangeLanguage(props) {
 
     }
 
-    function changeFlag() {
+    function ChangeFlag() {
         const cookie = useCookies()
 
         const locale = cookie.get('LOCALE')
@@ -49,14 +49,14 @@ export function ChangeLanguage(props) {
         if (locale === "en") {
             return <EnglandFlagIcon />
         }
-        if (locale === "es") {
+        if (locale === "es" || isSpanish === true) {
             return <SpanishFlagIcon />
         }
     }
 
     return (
         <Link href="" onClick={() => onClick()} {...props}>
-            {changeFlag()}
+            {ChangeFlag()}
         </Link>
     )
 
