@@ -10,9 +10,9 @@ import { defaultLocale } from "@/langConfig";
 export function ChangeLanguage(props) {
 
     const [isSpanish, setLang] = useState(false)
-    const cookies = useCookies()
 
     useEffect(() => {
+        const cookies = useCookies()
 
         if (cookies.get('LOCALE') === undefined) {
 
