@@ -10,11 +10,12 @@ import { defaultLocale } from "@/langConfig";
 export function ChangeLanguage(props) {
 
     const [isSpanish, setLang] = useState(false)
+    const cookies = useCookies()
 
     useEffect(() => {
-        const cookies = getUserLocale()
 
-        if (cookies === undefined) {
+
+        if (cookies.get('LOCALE') === undefined) {
 
 
             setUserLocale('en')
