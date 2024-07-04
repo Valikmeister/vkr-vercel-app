@@ -5,15 +5,20 @@ import { useEffect, useState } from "react";
 import { EnglandFlagIcon } from "@/components/icons/EnglandFlagIcon";
 import { SpanishFlagIcon } from "@/components/icons/SpanishFlagIcon";
 import { useCookies } from "next-client-cookies";
+import { defaultLocale } from "@/langConfig";
 
 export function ChangeLanguage(props) {
 
     const [isSpanish, setLang] = useState(false)
-
-
+    const cookies = useCookies()
 
     useEffect(() => {
 
+        if (cookies.get('LOCALE') === undefined) {
+
+
+            setUserLocale('en')
+        }
 
 
     }, [])
@@ -21,20 +26,22 @@ export function ChangeLanguage(props) {
 
 
 
+
+
     async function onClick() {
 
 
-        const locale = await getUserLocale();
+        const locale = await getUserLocale()
 
         switch (locale) {
             case "en":
                 setLang(true)
-                return await setUserLocale("es")
+                return setUserLocale('es')
 
 
             case "es":
                 setLang(false)
-                await setUserLocale("en")
+                return setUserLocale('en')
 
 
         }
@@ -43,7 +50,7 @@ export function ChangeLanguage(props) {
 
     function ChangeFlag() {
         const cookie = useCookies()
-
+        // cookie.set('LOCALE', 'en')
         const locale = cookie.get('LOCALE')
 
         if (locale === "en") {
