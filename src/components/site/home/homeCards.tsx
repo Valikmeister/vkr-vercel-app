@@ -1,7 +1,7 @@
 import { Card, CardHeader, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
 
-
+import { SvgBackground } from "@/components/icons/svgBackground";
 
 
 
@@ -24,12 +24,16 @@ export function HomeCards() {
 
                     <p className="text-white mt-24">{t("home-card-body")}</p>
                 </CardHeader>
-                <Image removeWrapper
+                <SvgBackground></SvgBackground>
+
+                {/* <Image removeWrapper
                     alt="Card background"
                     className="z-0 w-full h-full object-cover"
                     src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzNvbHIwM2c5dWJkZ3NzM21yc3NmMWh5YXZ5OGc1bjAweWQwZmt0NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7b8jdNUoFBdcoILjjv/giphy.webp">
 
-                </Image>
+                </Image> */}
+
+
 
                 <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-center animate-pulse">
                     <div>

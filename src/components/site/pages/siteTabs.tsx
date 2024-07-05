@@ -1,14 +1,13 @@
 
 
-import { Tab, Tabs } from "@nextui-org/react";
 import { Link } from "react-scroll";
 import { Button, ButtonGroup } from "@nextui-org/react";
-import { useRef } from "react";
+import { useTranslations } from "next-intl";
 
 
 export default function SiteTabs() {
 
-
+    const t = useTranslations("Translation")
 
 
     return (
@@ -18,19 +17,19 @@ export default function SiteTabs() {
             <Button as={Link} href="#" to="home-scroll" spy={true}
                 smooth={true}
                 offset={-100}
-                duration={500} >Home</Button>
+                duration={500} >{t("menu-home")}</Button>
             <Button as={Link} href="#projects" to="project-scroll" spy={true}
                 smooth={true}
                 offset={-200}
-                duration={500} >Projects</Button>
+                duration={500} >{t("menu-projects")}</Button>
             <Button as={Link} href="#aboutme" to="about-me-scroll" spy={true}
                 smooth={true}
                 offset={-125}
-                duration={500} >About Me</Button>
+                duration={500} >{t("menu-about-me")}</Button>
             <Button as={Link} href="#contact" to="contact-scroll" spy={true}
                 smooth={true}
                 offset={-90}
-                duration={500}>Contact</Button>
+                duration={500}>{t("menu-contact")}</Button>
         </ButtonGroup >
 
         // <Tabs variant="underlined">

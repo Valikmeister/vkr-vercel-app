@@ -4,19 +4,13 @@ import {
     Navbar, NavbarBrand,
     NavbarContent,
     NavbarItem,
-
-    NavbarMenu,
-    NavbarMenuItem,
-    Link,
-    Button
 } from "@nextui-org/react";
 import { Link as LinkScroll } from "react-scroll";
 import { ThemeSwitcher } from "./util/themeswitch";
-import { SpanishFlagIcon } from "../icons/SpanishFlagIcon";
-import { EnglandFlagIcon } from "../icons/EnglandFlagIcon";
 import SiteTabs from "./pages/siteTabs";
 import { ChangeLanguage } from "./util/changeLanguage";
 import { MobileMenuToggle } from "./pages/mobileMenu";
+
 
 export default function NavBar() {
 
@@ -63,7 +57,8 @@ export default function NavBar() {
                     <ThemeSwitcher></ThemeSwitcher>
                 </NavbarItem>
                 <NavbarItem>
-                    <ChangeLanguage>sdfa</ChangeLanguage>
+
+                    <ChangeLanguage />
                 </NavbarItem>
             </NavbarContent>
 

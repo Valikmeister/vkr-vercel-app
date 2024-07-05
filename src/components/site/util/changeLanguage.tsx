@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { EnglandFlagIcon } from "@/components/icons/EnglandFlagIcon";
 import { SpanishFlagIcon } from "@/components/icons/SpanishFlagIcon";
 import { useCookies } from "next-client-cookies";
-import { defaultLocale } from "@/langConfig";
 
 export function ChangeLanguage(props) {
 
@@ -63,9 +62,12 @@ export function ChangeLanguage(props) {
     }
 
     return (
+
         <Link href="" onClick={() => onClick()} {...props}>
             {ChangeFlag()}
+
         </Link>
+
     )
 
 

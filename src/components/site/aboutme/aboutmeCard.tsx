@@ -2,12 +2,13 @@
 import { Card, CardHeader, CardBody, CardFooter, Image, Button, Avatar } from "@nextui-org/react";
 import { Divider } from "@nextui-org/react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Element } from "react-scroll";
 
 export function AboutMeCards() {
 
     const avatar = <Avatar ImgComponent={Image} radius="lg" src="https://media.licdn.com/dms/image/D4E03AQGh3Anrlh94Wg/profile-displayphoto-shrink_400_400/0/1719922258920?e=1725494400&v=beta&t=zgQMUpTiCLGuNtv5kgiqpluUTHhZNatvZ3PtHXB9_Rw" size="lg" className="h-[120px] w-[120px] "></Avatar>
-
+    const t = useTranslations("Translation");
 
     return (
 
@@ -25,8 +26,8 @@ export function AboutMeCards() {
 
                 </CardHeader>
 
-                <CardBody>
-
+                <CardBody className="items-center justify-center">
+                    <p>{t("about-me-card-body")}</p>
                 </CardBody>
 
 

@@ -14,7 +14,7 @@ export function ProjectCarousel() {
                 <Code className="mb-10 font-mono text-2xl" size="lg">{t("projects-title")}</Code>
             </div>
             <div className="items-center">
-                <Carousel   >
+                <Carousel>
                     <div>
                         <ProjectSkeletonCard></ProjectSkeletonCard>
                     </div>
@@ -22,18 +22,6 @@ export function ProjectCarousel() {
                         <ProjectSkeletonCard></ProjectSkeletonCard>
                     </div>
                     <div className="animate-bounce">
-                        <ProjectSkeletonCard></ProjectSkeletonCard>
-                    </div>
-                    <div>
-                        <ProjectSkeletonCard></ProjectSkeletonCard>
-                    </div>
-                    <div>
-                        <ProjectSkeletonCard></ProjectSkeletonCard>
-                    </div>
-                    <div>
-                        <ProjectSkeletonCard></ProjectSkeletonCard>
-                    </div>
-                    <div>
                         <ProjectSkeletonCard></ProjectSkeletonCard>
                     </div>
 

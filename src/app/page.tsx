@@ -19,11 +19,11 @@ export default function MainPage() {
 
         <HomeCards></HomeCards>
       </div>
-      <div className="my-96" >
+      <div className="my-96 sm:my-50" >
         <Element name="project-scroll" />
         <ProjectCarousel ></ProjectCarousel>
       </div>
-      <div className="mb-96">
+      <div className="mb-96 sm:mb-20">
         <Element name="about-me-scroll" />
         <AboutMeCards></AboutMeCards>
       </div>
