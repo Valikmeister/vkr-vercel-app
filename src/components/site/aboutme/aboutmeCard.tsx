@@ -15,19 +15,20 @@ export function AboutMeCards() {
 
         <div id="aboutme" className="scroll-my-32">
 
-            <Card className="lg:h-[700px]  md:h-[500px] h-[400px]   lg:w-[800px] md:w-[500px] w-[350px] bg-grey my-56 " shadow="lg" disableRipple >
+            <Card className="lg:h-[700px]  md:h-[600px] h-[800px]   lg:w-[800px] md:w-[500px] w-[350px]  shadow-2xl shadow-black dark:shadow-white" shadow="lg" disableRipple >
 
 
-                <CardHeader className="absolute z-10  flex-col bg-gradient-to-b from-gray-700 select-none ">
+                <CardHeader className="absolute z-10  flex-col dark:bg-black select-none ">
                     <Element name="about-me-scroll" />
 
-                    <h4 className="text-white dark:text-white font-medium text-xl font-mono ">Valentin K.R.</h4>
+                    <h4 className=" dark:text-white font-medium text-xl font-mono ">Valentin K.R.</h4>
                     {avatar}
 
                 </CardHeader>
 
-                <CardBody className="items-center justify-center">
-                    <p>{t("about-me-card-body")}</p>
+                <CardBody className="items-center justify-center  dark:bg-black   mt-32">
+                    <p className="font-serif:Cambria text-center  dark:text-white text-wrap ">{t("about-me-card-body")}</p>
+                    <p className="font-serif:Cambria text-center  dark:text-white text-wrap  mt-10">{t("about-me-card-body1")}</p>
                 </CardBody>
 
 

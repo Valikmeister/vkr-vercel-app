@@ -10,10 +10,10 @@ export function ProjectCarousel() {
     return (
 
         <div id="projects" className="my-50 select-none  scroll-m-52 ">
-            <div className="flex justify-center">
+            <div className="flex justify-center ">
                 <Code className="mb-10 font-mono text-2xl" size="lg">{t("projects-title")}</Code>
             </div>
-            <div className="items-center">
+            <div className="rounded-[20px]">
                 <Carousel>
                     <div>
                         <ProjectSkeletonCard></ProjectSkeletonCard>

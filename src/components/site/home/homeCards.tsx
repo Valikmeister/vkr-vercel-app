@@ -16,13 +16,16 @@ export function HomeCards() {
 
         <div className="">
 
-            <Card className="lg:h-[700px]  md:h-[500px] h-[600px]   lg:w-[1100px] md:w-[500px] w-[380px] bg-grey shadow-2xl" shadow="lg" isPressable={false} disableRipple>
+            <Card className="lg:h-[700px]  md:h-[500px] h-[600px]   lg:w-[1100px] md:w-[500px] w-[380px] bg-grey shadow-2xl shadow-2xl shadow-black dark:shadow-white " shadow="lg" isPressable={false} disableRipple>
                 <CardHeader className="absolute z-10 top-1 flex-col">
                     <p className="text-tiny text-white/60 uppercase font-bold ">{t("home-card-title")}</p>
                     <h4 className="text-white font-medium text-large ">{leftArrow}{t("home-card-title-1")}{rightArrow}</h4>
 
 
-                    <p className="text-white mt-24">{t("home-card-body")}</p>
+                    <p className="font-mono text-white mt-32 text-xl animate-[wiggle_1s_ease-in-out_infinite] ">{t("home-card-body-q")}</p>
+                    <p className="font-mono text-white mt-2 text-xl">{t("home-card-body-q1")}</p>
+                    <p className="font-mono text-white mt-10">{t("home-card-body-q2")}</p>
+
                 </CardHeader>
                 <SvgBackground></SvgBackground>
 
